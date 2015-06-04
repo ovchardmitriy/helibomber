@@ -1,0 +1,44 @@
+<!DOCTYPE HTML>
+
+<html lang="en">
+
+<head>	
+	<meta charset="utf-8">
+    <title>#HeliBomber</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Dmitriy Ovchar"/>
+    <meta name="copyright" content="(c) Dmitriy Ovchar">
+    <meta http-equiv="Reply-to" content="ovchar.dmitriy@gmail.com">	
+    <link rel="stylesheet" href="vegas/jquery.vegas.css">
+    <link rel="stylesheet" href="style/style.css">
+    <script src="js/jquery-1.10.2.min.js"></script>
+	<script src="vegas/jquery.vegas.js"></script>
+	<script>
+	$(function() {
+		$.vegas({
+            src:'style/img/background.jpg'
+        });
+        $.vegas( "overlay", {
+			src:"vegas/overlays/15.png"
+		});
+	});		
+	</script>
+</head>
+<body>
+
+<div id="movie">
+	<!--[if IE]>
+		<object id="movie" type="application/x-shockwave-flash" width="640" height="480">
+			<param name="movie"value="media/helibomber.swf">
+		</object>
+	<![endif]-->
+	<!--[if !IE]> <-->
+		<embed name="movie" allowNetworking="all" type="application/x-shockwave-flash" src="media/helibomber.swf" width="640" height="480">
+		</embed>
+	<!-->
+	<![endif]-->
+</div>
+
+</body>
+</html>
